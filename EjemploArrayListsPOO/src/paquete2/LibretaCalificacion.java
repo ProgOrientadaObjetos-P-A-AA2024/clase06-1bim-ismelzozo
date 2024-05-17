@@ -59,7 +59,7 @@ public class LibretaCalificacion {
                             promedioCualitativo = "Sin rango";
                         }
                     }
-                }
+                } 
             }
         }
     }
