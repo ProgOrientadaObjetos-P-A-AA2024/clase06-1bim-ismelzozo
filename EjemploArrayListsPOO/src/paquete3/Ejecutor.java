@@ -20,28 +20,31 @@ public class Ejecutor {
         
         
         for (int i = 1; i <= cantidad; i++) {
+            sc.nextLine();
             System.out.println("Ingrese la marca del " + i + " ° procesador");
             String marca = sc.nextLine();
+            sc.nextLine();
             System.out.println("Ingrese el costo " + i + " ° procesador");
             double costo = sc.nextDouble();
+            sc.nextLine();
             Procesador pro = new Procesador(marca, costo);
-
+            sc.nextLine();
             System.out.println("Ingrese la marca de la " + i + " ° memoria");
             String marcam = sc.nextLine();
             sc.nextLine();
             System.out.println("Ingrese el costo de la " + i + " ° memoria");
             double costom = sc.nextDouble();
-
+            sc.nextLine();
             Memoria men = new Memoria(marcam, costom);
 
             System.out.println("Ingrese la marca del " + i + " ° computador");
             String marcac = sc.nextLine();
-
+            sc.nextLine();
             Computador compu1 = new Computador(marcac, men, pro);
             compu1.establecerCostoComputador();
             sc.nextLine();
 
-            val1 = String.format("%s - %s\n", val1, compu1);
+              val1 = String.format("%s - %s\n", val1, compu1);
             computadoras.add(compu1);
             Venta v = new Venta(computadoras);
             v.establecerValorVenta(compu1.obtenerCostoComputador());

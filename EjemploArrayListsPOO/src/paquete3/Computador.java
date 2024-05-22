@@ -47,9 +47,8 @@ public class Computador {
 
     
     @Override
-    public String toString() {
-        
-        String cadena = String.format("\n===========================Lista de computadoras %s\n"
+    public String toString() {        
+        String toString = String.format("\n===========================Lista de computadoras %s\n"
                 + "Marca Memoria %s\n============================\n"
                 + "Marca Procesador %s\n=============================\n"
                 + "Costo Memoria %.2f\n===============================\n"
@@ -60,7 +59,7 @@ public class Computador {
                 obtenerMemoria().obtenerCosto(),
                 obtenerProcesador().obtenerCosto(),
                 obtenerCostoComputador());
-        return cadena;
+        return toString;
     }
    
 }
